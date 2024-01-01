@@ -9,7 +9,7 @@ class OpensshService < Formula
   
   service do
     run [Formula["openssh"].opt_bin/"/opt/homebrew/bin/ssh-agent", "-D", "-a", "/tmp/ssh-agent.socket"]
-    environment_variables "SSH_ASKPASS"=>Formula["vdr/tap/ssh-askpass"].opt_bin/"ssh-ask", "SSH_ASKPASS_REQUIRE"=>"force"
+    environment_variables "SSH_ASKPASS"=>Formula["vdr/tap/ssh-askpass"].opt_bin/"ssh-askpass", "SSH_ASKPASS_REQUIRE"=>"force"
     keep_alive true
   end
 
