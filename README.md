@@ -31,3 +31,15 @@ but without caveat about the service and some Apple Silicon fixes.
 (equivalent of the service will be done in `openssh-fido-agent-install`)
 
 See [ssh-askpass](https://github.com/vdr/ssh-askpass/)
+
+## colima
+
+`brew install vdr/tap/colima`
+
+An old version of [colima](https://github.com/abiosoft/colima), still running on version v28 of Docker Engine.
+
+Alternative, just install using mise:
+```
+brew instal qemu lima
+mise use -g colima@0.9.1
+```
